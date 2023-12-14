@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="validation.js"></script>
+  <title>Contact Us</title>
+  <style>
+    #content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navigation">
+    <ul>
+      <li class="social-icon"><a href="index.html"target="_blank"><img src="images/Homelogo.jpeg" alt="Home Logo" width="20" height="20"> Home</a></li>
+      <li class="social-icon"><a href="products.html" target="_blank"><img src="images/productBurger.jpeg" alt="Product Logo" width="20" height="20"> Products</a></li>
+      <li class="social-icon"><a href="contact.html" target="_blank"><img src="images/Contact2.png" alt="Contact Logo" width="20" height="20"> Contact</a></li>
+      <li class="social-icon"><a href="https://www.mcdonalds.com/us/en-us.html" target="_blank"><img src="images/mcd.jpeg" alt="Mcd Logo" width="20" height="20"> Official Site</a></li>
+      <li class="social-icon"><a href="https://www.mcdonalds.com/us/en-us/download-app.html#download-app" target="_blank"><img src="images/App.jpeg" alt="download app" width="20" height="20"> Download App</a></li>
+    </ul>
+  </nav>
+  <header id="header">
+    <h1>Contact Us</h1>
+  </header>
+  <main id="content">
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <div id="nameError" class="error"></div>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+      <div id="phoneError" class="error"></div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <div id="emailError" class="error"></div>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+      <div id="commentsError" class="error"></div>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </main>
+  
+<footer id="footer">
+  <p >&#169;All rigths reserved</p>
+  <p>Email: lashmansingh@gmail.com</p>
+  <p>Address: 425 Nathaniel street, Winnipeg</p>
+  <p>
+    <a href="https://www.linkedin.com/in/-lashman-singh?" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <img src="images/LinkedIn.jpeg" alt="LinkedIn" width="20" height="20" style="vertical-align: middle;"> LinkedIn
+    </a>
+    &nbsp; 
+    <a href="https://github.com/Lashman-singh" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <img src="images/GitHub.png" alt="GitHub" width="20" height="20" style="vertical-align: middle;"> GitHub
+    </a>
+  </p>    
+</footer>
+</body>
+
+</html>

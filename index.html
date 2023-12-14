@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    #header h1 {
+      margin-bottom: 20px;
+    }
+
+    #imageSlider {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    section {
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let currentImageIndex = 0;
+      const images = ['images/BeefBurgers.jpeg', 'images/ChickenBurgers.jpeg', 'images/Wrapes.jpeg'];
+      const imageSlider = document.getElementById('slider');
+
+      function changeImage() {
+        imageSlider.src = images[currentImageIndex];
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+      }
+      
+      setInterval(changeImage, 1300);
+          images.forEach((image) => {
+            const img = new Image();
+            img.src = image;
+          });
+      });
+
+  </script>
+  <title>McDonald's</title>
+</head>
+
+<body>
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html" target="_blank"><img src="images/Homelogo.jpeg" alt="Home Logo" width="20" height="20"> Home</a></li>
+      <li><a href="products.html" target="_blank"><img src="images/productBurger.jpeg" alt="Product Logo" width="20" height="20"> Products</a></li>
+      <li><a href="contact.html" target="_blank"><img src="images/Contact2.png" alt="Contact Logo" width="20" height="20"> Contact</a></li>
+      <li><a href="https://www.mcdonalds.com/us/en-us.html" target="_blank"><img src="images/mcd.jpeg" alt="Mcd Logo" width="20" height="20"> Official Site</a></li>
+      <li><a href="https://www.mcdonalds.com/us/en-us/download-app.html#download-app" target="_blank"><img src="images/App.jpeg" alt="download app" width="20" height="20"> Download App</a></li>
+    </ul>
+  </nav>
+  <header id="header" >
+    <h1>McDonald's of Lashman</h1>
+    <img id="slider" src="images/BeefBurgers.jpeg" alt="BeefBurgers image">
+  </header>
+  <main id="content">
+    <section>
+      <h2>Food Items</h2>
+      <div class="product">
+        <img src="images/BeefBurgers.jpeg" alt="BeefBurgers images">
+        <h3>Canadian fresh beef burgers</h3>
+        <p>Experience the delectable charm of McDonald's Canadian Fresh Beef Burgers, where quality meets taste in every savory bite. Sourced from the pristine landscapes of Canada, our burgers feature succulent, locally-raised beef, grilled to perfection for that
+           irresistible juiciness.</p>
+      </div>
+
+      <div class="product">
+        <img src="images/ChickenBurgers.jpeg" alt="ChickenBurgers image">
+        <h3>Chicken Burgers</h3>
+        <p>Embark on a flavor journey with McDonald's Chicken Burgers, a culinary delight that redefines the essence of quality and taste. Crafted with the finest chicken sourced from trusted suppliers, our burgers promise a symphony of succulence in every bite. Whether you opt for the classic 
+          McChicken or venture into our diverse range of specialty chicken burgers, each patty is grilled to perfection, ensuring a tender and flavorful experience. McDonald's dedication to using high-quality, responsibly-sourced chicken showcases our commitment to freshness and taste. With 
+          every mouthwatering option, McDonald's invites you to savor the rich, natural flavors of premium chicken, making your dining experience a celebration of quality ingredients and the delicious essence of our chicken burgers.</p>
+      </div>
+
+      <div class="product">
+        <img src="images/Wrapes.jpeg" alt="Wrapes image">
+        <h3>McWraps: Chili Wrap, Lime Wrap, Bacon Wrap </h3>
+        <p>Embark on a culinary adventure with our irresistible McWraps – a symphony of taste, freshness, and innovation that takes your senses on a delightful journey. The Chili Wrap brings a spicy kick with perfectly seasoned ingredients, while the Lime Wrap infuses zesty citrus flavors 
+          for a refreshing twist. And for the bacon enthusiasts, our Bacon Wrap is a savory delight that combines the smokiness of bacon with an array of delicious fillings. Each McWrap is a work of art, meticulously crafted to tantalize your taste buds and redefine your wrap experience.
+           Embrace the flavor revolution and savor every moment with our Chili, Lime, and Bacon McWraps. Your taste buds will thank you</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Savor More, Spend Less - Exclusive Discount Offers Await You!</h2>
+      <p>Indulge in a feast of savings with our exclusive discount offers designed to elevate your dining experience without breaking the bank.</p>
+      <p>Don't miss out combo deals that satisfy every craving to limited-time discounts that make your visit even more delightful, our offers are crafted to ensure you savor every bite while enjoying unbeatable value.</p>
+      <p>Join us in redefining the joy of dining – where your satisfaction is not only guaranteed but comes with the added bonus of incredible savings. Come, discover a world of flavor and affordability at Lashman's Mcdonald's.</p>
+    </section>
+    <img src="" alt=""></imb>
+  </main>
+  <footer id="footer">
+    <p >&#169;All rigths reserved</p>
+    <p>Email: lashmansingh@gmail.com</p>
+    <p>Address: 425 Nathaniel street, Winnipeg</p>
+    <p>
+      <a href="https://www.linkedin.com/in/-lashman-singh?" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <img src="images/LinkedIn.jpeg" alt="LinkedIn" width="20" height="20" style="vertical-align: middle;"> LinkedIn
+      </a>
+      &nbsp; 
+      <a href="https://github.com/Lashman-singh" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <img src="images/GitHub.png" alt="GitHub" width="20" height="20" style="vertical-align: middle;"> GitHub
+      </a>
+    </p>    
+  </footer>
+</body>
+
+</html>

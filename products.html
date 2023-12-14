@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex: 0 0 calc(30% - 40px);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+  </style>
+  <title>Products</title>
+</head>
+
+<body>
+  <nav id="navigation">
+    <ul>
+      <li class="social-icon"><a href="index.html"target="_blank"><img src="images/Homelogo.jpeg" alt="Home Logo" width="20" height="20"> Home</a></li>
+      <li class="social-icon"><a href="products.html" target="_blank"><img src="images/productBurger.jpeg" alt="Product Logo" width="20" height="20"> Products</a></li>
+      <li class="social-icon"><a href="contact.html" target="_blank"><img src="images/Contact2.png" alt="Contact Logo" width="20" height="20"> Contact</a></li>
+      <li class="social-icon"><a href="https://www.mcdonalds.com/us/en-us.html" target="_blank"><img src="images/mcd.jpeg" alt="Mcd Logo" width="20" height="20"> Official Site</a></li>
+      <li class="social-icon"><a href="https://www.mcdonalds.com/us/en-us/download-app.html#download-app" target="_blank"><img src="images/App.jpeg" alt="download app" width="20" height="20"> Download App</a></li>
+    </ul>
+  </nav>
+  <header id="header">
+    <h1>Is your mouth-watering?</h1>
+  </header>
+  <main id="content">
+    <section class="product">
+      <h2>Big Mac</h2>
+      <img src="images/BigMac.jpeg" alt="Big mac Image" id="BigMac">
+      <p>
+        Dive into a world of iconic taste with McDonald's legendary Big Mac. A symphony of two
+         mouthwatering beef patties, special sauce, crisp lettuce, pickles, onions, and perfectly melted cheese – all sandwiched between our signature sesame seed bun. The Big Mac isn't just a burger; it's a culinary masterpiece that has stood the test of time. Each bite is a harmonious blend of flavors and textures, creating an unparalleled burger experience that has become a global sensation.
+      </p>
+    </section>
+
+    <section class="product">
+      <h2>McCrispy</h2>
+      <img src="images/Mccrispy.jpeg" alt="McCrispy">
+      <p>
+        With our Spicy Pepper Sauce topping the southern style fried chicken fillet on a toasted potato roll, this sandwich was made for those who like it crispy, juicy, tender and hot Get ready to crunch, savor, and spice up your burger love!.
+      </p>
+    </section>
+
+    <section class="product">
+      <h2>Happy Meal</h2>
+      <img src="images/HappyMeal.jpeg" alt="HappyMeal Image">
+      <p>
+        Discover a world of smiles and surprises with McDonald's Happy Meal – where the magic of childhood comes alive in a delightful box! Specially crafted for our youngest guests, each Happy Meal is a treasure trove of joy, featuring a scrumptious kid-friendly entrée, a side, a refreshing drink, and a surprise toy that sparks imagination. From beloved characters to interactive games, every Happy Meal brings a burst of happiness to your little one's day. 
+      </p>
+    </section>
+
+    <!-- Add more sections with new images and details as needed -->
+
+    <section class="product">
+      <h2>Breakfast</h2>
+      <img src="images/BreakfastWithHostcake.jpeg" alt="Breakfast image">
+      <p>
+        Delight in the perfect start to your day with McDonald's hearty Breakfast featuring a delectable ensemble of Hotcakes, Hash Browns, Sausage, and Muffin. Begin your morning with the fluffy goodness of Hotcakes, drizzled with maple syrup for a touch of sweetness that complements their melt-in-your-mouth texture. Paired with golden Hash Browns, crispy on the outside and tender on the inside, it's a symphony of flavors and textures.
+      </p>
+    </section>
+
+    <section class="product">
+      <h2>Double Quarter Pounder</h2>
+      <img src="images/quarter.jpeg" alt="Quarter image">
+      <p>
+        Two quarter pound* 100% Canadian beef patties. Layered with two slices of melty cheese, slivered onions and pickles on sesame seed bun. *Weight before cooking at least 112.3g .
+      </p>
+    </section>
+  </main>
+  <footer id="footer">
+    <p >&#169;All rigths reserved</p>
+    <p>Email: lashmansingh@gmail.com</p>
+    <p>Address: 425 Nathaniel street, Winnipeg</p>
+    <p>
+      <a href="https://www.linkedin.com/in/-lashman-singh?" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <img src="images/LinkedIn.jpeg" alt="LinkedIn" width="20" height="20" style="vertical-align: middle;"> LinkedIn
+      </a>
+      &nbsp; 
+      <a href="https://github.com/Lashman-singh" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <img src="images/GitHub.png" alt="GitHub" width="20" height="20" style="vertical-align: middle;"> GitHub
+      </a>
+    </p>     
+  </footer>
+</body>
+
+</html>
